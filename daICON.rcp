@@ -1,0 +1,84 @@
+
+#include "res.h"
+
+VERSION id 1 "0.2"
+
+form id DA_FORM_ID at (2 91 156 67)
+modal
+savebehind
+helpid DA_HELP_ID
+begin
+	title "icon maker"
+	button "Copy"		id COPY_BUTTON_ID		at (118 16 34 12)
+	button "Insert"		id INSERT_BUTTON_ID		at (118 33 34 12) nonusable
+	button ""			id SCROLL_UP_ID			at ( 72 15 12  8) NOFRAME font 5
+	button ""			id SCROLL_LEFT_ID		at ( 62 25  8 12) NOFRAME font 4
+	button ""			id SCROLL_RIGHT_ID		at ( 86 25  8 12) NOFRAME font 4
+	button ""			id SCROLL_DOWN_ID		at ( 72 39 12  8) NOFRAME font 5
+	button ""			id FILP_HORZ_ID			at ( 60 52 12 12) NOFRAME
+	button ""			id FILP_VERT_ID			at ( 72 52 12 12) NOFRAME
+	button ""			id ROTATE_RIGHT_ID		at ( 84 52 12 12) NOFRAME
+	button ""			id PIXEL_INVERT_ID		at ( 96 52 12 12) NOFRAME
+	formbitmap									at ( 62 15 ) bitmap BITMAP_SMALL_ID
+	formbitmap									at ( 60 53 ) bitmap BITMAP_TOOLS_ID
+	graffitistateindicator						at (140 54)
+end
+
+//	button "\001"   id SCROLL_UP_ID     at ( 70 15 13  9) NOFRAME font 5
+//	button "\002"   id SCROLL_LEFT_ID   at ( 59 25  9 13) NOFRAME font 4
+//	button "\003"   id SCROLL_RIGHT_ID  at ( 85 26  9 13) NOFRAME font 4
+//	button "\002"   id SCROLL_DOWN_ID   at ( 71 41 13  9) NOFRAME font 5
+
+//	formbitmap							at ( prevleft+1 prevtop+1 ) bitmap BITMAP_HORZ_ID
+//	formbitmap							at ( prevleft+1 prevtop+1 ) bitmap BITMAP_VERT_ID
+//	formbitmap							at ( prevleft+1 prevtop+1 ) bitmap BITMAP_ROTATE_ID
+//	formbitmap							at ( prevleft+1 prevtop+1 ) bitmap BITMAP_INVERT_ID
+
+//	button "Insert" id INSERT_BUTTON_ID at (118 33 34 12) disabled
+
+//	checkbox "Insert" id INSERT_BUTTON_ID at (112 32 AUTO AUTO)
+//	button "\005" id UP_BUTTON_ID    at ( 80 36 12 12) FRAME font 3
+//	button "\003" id LEFT_BUTTON_ID  at ( 64 44 13 12) FRAME font 3
+//	button "\004" id RIGHT_BUTTON_ID at ( 95 44 13 12) FRAME font 3
+//	button "\006" id DOWN_BUTTON_ID  at ( 80 52 12 12) FRAME font 3
+
+// field id SAMPLE_FILED_ID at (60 30 50 33) leftalign font 0 multiplelines maxchars 1024
+// formbitmap at ( 2 14 ) bitmap GRID_BMP_ID
+// BITMAP id GRID_BMP_ID "grid5x5.bmp"
+
+BITMAP id BITMAP_TOOLS_ID		"tools.bmp"
+// BITMAP id BITMAP_HORZ_ID		"horz.bmp"
+// BITMAP id BITMAP_VERT_ID		"vert.bmp"
+// BITMAP id BITMAP_ROTATE_ID	"rotate.bmp"
+// BITMAP id BITMAP_INVERT_ID	"invert.bmp"
+BITMAP id BITMAP_SMALL_ID		"small.bmp"
+
+string id DA_HELP_ID ""\
+	"icon maker DA\n"\
+	"\tver.0.2\n"\
+	"\n"\
+	"(c)2000 by Hiroshi.Ono\n"\
+	"<pono@post.email.ne.jp>\n"\
+	"\n"\
+	"http://www.vector.co.jp/\n"\
+	"authors/VA001529/\n"\
+	"\n"\
+	"\n"\
+	"\n"\
+	"Graffiti Command\n"\
+	"\n"\
+	"u = Scroll Up\n"\
+	"d = Scroll Down\n"\
+	"l = Scroll Left\n"\
+	"r = Scroll Right\n"\
+	"h = Flip Horizontal\n"\
+	"v = Flip Vertical\n"\
+	"t = Rotate\n"\
+	"i = Invert"
+
+//	"f = Rotate Left\n"\
+//	"l = Scroll Left\n"\
+//	"r = Scroll Right\n"\
+//	"u = Scroll Up\n"\
+//	"d = Scroll Down\n"\
+
